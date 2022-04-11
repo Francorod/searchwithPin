@@ -13,9 +13,13 @@
 		9D37614127FF49AC0026F71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D37613F27FF49AC0026F71C /* Main.storyboard */; };
 		9D37614327FF49AE0026F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D37614227FF49AE0026F71C /* Assets.xcassets */; };
 		9D37614627FF49AE0026F71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D37614427FF49AE0026F71C /* LaunchScreen.storyboard */; };
+		9D37614E27FF4C380026F71C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37614D27FF4C380026F71C /* ResultViewController.swift */; };
+		9DBECC822804EA0600B47C99 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBECC812804EA0600B47C99 /* GooglePlacesManager.swift */; };
+		C0F4AB0C8F07E80B1F763F1D /* Pods_searchNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA101EAEE332FABF5BF28BC2 /* Pods_searchNow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A841B4FE579C2DE6992B972 /* Pods-searchNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchNow.debug.xcconfig"; path = "Target Support Files/Pods-searchNow/Pods-searchNow.debug.xcconfig"; sourceTree = "<group>"; };
 		9D37613627FF49AC0026F71C /* searchNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37613927FF49AC0026F71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D37613B27FF49AC0026F71C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		9D37614227FF49AE0026F71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D37614527FF49AE0026F71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D37614727FF49AE0026F71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D37614D27FF4C380026F71C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9DBECC812804EA0600B47C99 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+		B19D38DA97A2091A8304FF86 /* Pods-searchNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchNow.release.xcconfig"; path = "Target Support Files/Pods-searchNow/Pods-searchNow.release.xcconfig"; sourceTree = "<group>"; };
+		CA101EAEE332FABF5BF28BC2 /* Pods_searchNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_searchNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F4AB0C8F07E80B1F763F1D /* Pods_searchNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EA718FE3938FFEA3E653FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A841B4FE579C2DE6992B972 /* Pods-searchNow.debug.xcconfig */,
+				B19D38DA97A2091A8304FF86 /* Pods-searchNow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D37612D27FF49AC0026F71C = {
 			isa = PBXGroup;
 			children = (
 				9D37613827FF49AC0026F71C /* searchNow */,
 				9D37613727FF49AC0026F71C /* Products */,
+				6EA718FE3938FFEA3E653FFA /* Pods */,
+				D40A7DC31CF250E681D36B6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +79,22 @@
 				9D37613927FF49AC0026F71C /* AppDelegate.swift */,
 				9D37613B27FF49AC0026F71C /* SceneDelegate.swift */,
 				9D37613D27FF49AC0026F71C /* ViewController.swift */,
+				9D37614D27FF4C380026F71C /* ResultViewController.swift */,
 				9D37613F27FF49AC0026F71C /* Main.storyboard */,
 				9D37614227FF49AE0026F71C /* Assets.xcassets */,
 				9D37614427FF49AE0026F71C /* LaunchScreen.storyboard */,
 				9D37614727FF49AE0026F71C /* Info.plist */,
+				9DBECC812804EA0600B47C99 /* GooglePlacesManager.swift */,
 			);
 			path = searchNow;
+			sourceTree = "<group>";
+		};
+		D40A7DC31CF250E681D36B6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA101EAEE332FABF5BF28BC2 /* Pods_searchNow.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D37614A27FF49AE0026F71C /* Build configuration list for PBXNativeTarget "searchNow" */;
 			buildPhases = (
+				8CE2BF9AE18BA507E4EA03AE /* [CP] Check Pods Manifest.lock */,
 				9D37613227FF49AC0026F71C /* Sources */,
 				9D37613327FF49AC0026F71C /* Frameworks */,
 				9D37613427FF49AC0026F71C /* Resources */,
+				B6ADFD7A0C3D0F700AD3B22D /* [CP] Copy Pods Resources */,
+				75B067A951186551BE7933F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +166,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75B067A951186551BE7933F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CE2BF9AE18BA507E4EA03AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-searchNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6ADFD7A0C3D0F700AD3B22D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-searchNow/Pods-searchNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D37613227FF49AC0026F71C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +233,8 @@
 				9D37613E27FF49AC0026F71C /* ViewController.swift in Sources */,
 				9D37613A27FF49AC0026F71C /* AppDelegate.swift in Sources */,
 				9D37613C27FF49AC0026F71C /* SceneDelegate.swift in Sources */,
+				9D37614E27FF4C380026F71C /* ResultViewController.swift in Sources */,
+				9DBECC822804EA0600B47C99 /* GooglePlacesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +376,7 @@
 		};
 		9D37614B27FF49AE0026F71C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A841B4FE579C2DE6992B972 /* Pods-searchNow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +405,7 @@
 		};
 		9D37614C27FF49AE0026F71C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19D38DA97A2091A8304FF86 /* Pods-searchNow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
